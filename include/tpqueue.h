@@ -1,12 +1,14 @@
 // Copyright 2022 NNTU-CS
 #ifndef INCLUDE_TPQUEUE_H_
 #define INCLUDE_TPQUEUE_H_
+#include <string>
 
 template<typename T, int size>
 class TPQueue {
  private:
     T* array;
     int first, last, num;
+
  public:
     TPQueue() : last(0), first(0), num(0) {
         array = new T[size];
